@@ -1,3 +1,11 @@
+form {
+  width: 600px;
+  margin: 0 auto;
+  background-color: lightblue;
+}
 
+textarea {
+  text-align: left;
+}
 
 /*# sourceMappingURL=phpform.css.map */
