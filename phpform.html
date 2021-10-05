@@ -9,6 +9,7 @@
     content="This is an assignment where php will be used to process data form a HTML input form">
   <meta name="keywords" content="PHP, FORM, HTML FORM, FROM PROCESSOR">
   <meta name="author" content="Joshua Allen">
+  <link rel="stylesheet" href="phpform.css">
   <title>PHP Form Processor</title>
   <!-- 
           Joshua Allen
@@ -22,6 +23,21 @@
     <main>
       <form action="phpform.php" method="post">
         <legend>Assignment PHP FORM</legend>
+        <fieldset>
+          <legend>Name</legend>
+          <div>
+            <label for="cxFirstName">First Name:</label>
+            <input type="text" name="cxFirstName" id="cxFirstName">
+          </div>
+          <div>
+            <label for="cxLastName">Last Name:</label>
+            <input type="text" name="cxLastName" id="cxLastName">
+          </div>
+          <div>
+            <label for="schoolName">School Name:</label>
+            <input type="text" name="schoolName" id="schoolName">
+          </div>
+        </fieldset>
         <fieldset>
           <legend>Contact Method</legend>
           <div>
@@ -50,9 +66,10 @@
         </fieldset>
         <fieldset>
           <legend>Contact Options</legend>
-          <input type="checkbox" name="contact" id="PI" value="PI" checked="checked">
+          <input type="checkbox" name="contact" id="PI" value="Please contact me with program Information"
+            checked="checked">
           <label for="PI">Please contact me with program Information</label>
-          <input type="checkbox" name="contact" id="PA" value="PA">
+          <input type="checkbox" name="contact" id="PA" value="I would like to contact an program advisor">
           <label for="PA">I would like to contact an program advisor</label>
         </fieldset>
         <fieldset>
