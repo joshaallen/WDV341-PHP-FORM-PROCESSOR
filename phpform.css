@@ -1,11 +1,138 @@
-form {
-  width: 600px;
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  width: 100%;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #E0E0E0;
+  color: black;
+}
+
+.container {
+  width: 80vw;
+  min-width: 300px;
   margin: 0 auto;
-  background-color: lightblue;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+label {
+  display: inline-block;
+  width: 100%;
+}
+
+[type=text], [type=email] {
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+}
+
+[type=radio] + label {
+  display: inline;
+}
+
+.standing div {
+  display: inline;
+}
+
+select {
+  width: 100%;
+  padding: 10px 10px;
 }
 
 textarea {
+  width: 100%;
+  resize: none;
+  padding: 12px 20px;
   text-align: left;
+}
+
+[type=submit], [type=reset] {
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px solid black;
+  background-color: white;
+}
+
+form {
+  background-color: lightblue;
+}
+
+div.handler {
+  text-align: center;
+  background-color: lightblue;
+  min-width: 300px;
+  width: 60vw;
+  margin: 100px auto 0;
+  line-height: 1.8;
+  border-radius: 25px 25px;
+}
+
+@media screen and (min-width: 700px) {
+  fieldset div {
+    display: flex;
+  }
+
+  label {
+    display: inline-block;
+    width: 25%;
+  }
+
+  .standing {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .options {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .options label {
+    width: 100%;
+  }
+
+  [type=submit], [type=reset] {
+    display: inline;
+    width: 49%;
+  }
+}
+body {
+  font: 1.6rem "Times New Roman", Times, serif;
 }
 
 /*# sourceMappingURL=phpform.css.map */
