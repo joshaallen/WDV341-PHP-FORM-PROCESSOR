@@ -20,9 +20,11 @@
 
 <body>
   <div class="container">
+    <h1>WDV341 Intro to PHP</h1>
     <main>
+      <h2>Unit 5-1 HTML Form Processor</h2>
       <form action="phpform.php" method="post">
-        <legend>Assignment PHP FORM</legend>
+        <legend>HTML Form</legend>
         <fieldset>
           <legend>Name</legend>
           <div>
@@ -45,14 +47,22 @@
             <input type="email" name="cxEmail" id="cxEmail" placeholder="about@example.com" size=32>
           </div>
         </fieldset>
-        <fieldset>
+        <fieldset class="standing">
           <legend>Current Academic Standing</legend>
-          <label for="HighSchool">High School</label>
-          <input type="radio" name="academic" id="HighSchool" value="HighSchool">
-          <label for="Freshman">Freshman</label>
-          <input type="radio" name="academic" id="Freshman" value="Freshman">
-          <label for="Sophmore">Sophomore</label>
-          <input type="radio" name="academic" id="Sophmore" value="Sophmore">
+          <div>
+            <input type="radio" name="academic" id="HighSchool" value="HighSchool">
+            <label for="HighSchool">High School</label>
+          </div>
+          <div>
+            <input type="radio" name="academic" id="Freshman" value="Freshman">
+            <label for="Freshman">Freshman</label>
+          </div>
+          <div>
+            <input type="radio" name="academic" id="Sophmore" value="Sophmore">
+            <label for="Sophmore">Sophomore</label>
+
+          </div>
+
         </fieldset>
         <fieldset>
           <legend>Course Options</legend>
@@ -64,21 +74,26 @@
             <option value="WD">Web Development</option>
           </select>
         </fieldset>
-        <fieldset>
+        <fieldset class="options">
           <legend>Contact Options</legend>
-          <input type="checkbox" name="contact" id="PI" value="Please contact me with program Information"
-            checked="checked">
-          <label for="PI">Please contact me with program Information</label>
-          <input type="checkbox" name="contact" id="PA" value="I would like to contact an program advisor">
-          <label for="PA">I would like to contact an program advisor</label>
+          <div>
+            <input type="checkbox" name="contact" id="PI" value="Please contact me with program Information"
+              checked="checked">
+            <label for="PI">Please contact me with program Information</label>
+          </div>
+          <div>
+            <input type="checkbox" name="contact" id="PA" value="I would like to contact an program advisor">
+            <label for="PA">I would like to contact an program advisor</label>
+          </div>
+
         </fieldset>
         <fieldset>
           <legend>Comments</legend>
-          <textarea name="comments" id="comments" cols="30" rows="10">
+          <textarea name="comments" id="comments" cols="30" rows="10">Please leave you comment
           </textarea>
         </fieldset>
-        <button type=submit>Submit</button>
-        <button type="reset">Reset</button>
+        <input type=submit></input>
+        <input type="reset"></input>
       </form>
     </main>
   </div>
