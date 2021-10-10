@@ -7,6 +7,7 @@
   <meta name="description" content="This assignment is a webpage that will display confirmation info for a user who has just submitted from the form">
   <meta name="keywords" content="Confirmation Page, PHP, WebForms">
   <meta name="author" content="Joshua Allen">
+  <link rel="stylesheet" href="phpform.css">
   <title>PHP Form Confirmation Page</title>
                                   <!-- 
                                     Joshua Allen
@@ -15,7 +16,9 @@
                                   -->
 </head>
 <body>
-  <p style="height:600px;width:600px;margin:0 auto; background-color:lightblue">
+  <h1>Unit 5-1 HTML Form Processor Confirmation</h1>
+  <div class="handler">
+  <p>
     Dear <?php echo $_POST['cxFirstName'] ?>,
     <br>
     Thank you for your interest DMACC.
@@ -31,5 +34,6 @@
     You have shared the following comments which we will review: 
     <?php echo $_POST['comments'] ?>
   </p>
+  </div>
 </body>
 </html>
